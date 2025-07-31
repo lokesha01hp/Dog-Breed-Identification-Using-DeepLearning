@@ -1,7 +1,6 @@
 # Dog Breed Identification Using Deep Learning
 
-This project classifies over **120 dog breeds** from a dataset of **10,000+ images** using deep learning.  
-It harnesses the power of **transfer learning** to build an efficient, accurate image classification model with limited compute.
+This project classifies over **120 dog breeds** from a dataset of **10,000+ images** using deep learning. It harnesses the power of **transfer learning** to build an efficient, accurate image classification model with limited compute.
 
 ---
 
@@ -10,11 +9,10 @@ It harnesses the power of **transfer learning** to build an efficient, accurate 
 - 10,000+ high-quality dog images
 - 120 distinct dog breeds
 - Images are labeled and split into train/validation sets
-- Likely source: [Stanford Dogs Dataset](http://vision.stanford.edu/aditya86/ImageNetDogs/)
 
 ---
 
-## 🧠 Approach
+## Approach
 
 - **Transfer Learning:** Leveraged pre-trained CNN architectures (e.g., ResNet50, EfficientNet, VGG16)
 - **Fine-tuning:** Trained top layers on dog images while freezing base model weights (initially)
@@ -23,9 +21,9 @@ It harnesses the power of **transfer learning** to build an efficient, accurate 
 
 ---
 
-## 🚀 Tech Stack
+## Tech Stack
 
-- **Python** 🐍
+- **Python** 
 - **TensorFlow / Keras** for model building & training
 - **NumPy / Pandas** for data handling
 - **Matplotlib / Seaborn** for visualization
