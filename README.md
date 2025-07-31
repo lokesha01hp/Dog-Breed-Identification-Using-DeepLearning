@@ -14,7 +14,7 @@ This project classifies over **120 dog breeds** from a dataset of **10,000+ imag
 
 ## Approach
 
-- **Transfer Learning:** Leveraged pre-trained CNN architectures (e.g., ResNet50, EfficientNet, VGG16)
+- **Transfer Learning:** Leveraged pre-trained CNN architectures (Mobilenetv4)
 - **Fine-tuning:** Trained top layers on dog images while freezing base model weights (initially)
 - **Image Preprocessing:** Resizing, normalization, and optional data augmentation
 - **Model Evaluation:** Accuracy, confusion matrix, and visual sample predictions
@@ -27,13 +27,4 @@ This project classifies over **120 dog breeds** from a dataset of **10,000+ imag
 - **TensorFlow / Keras** for model building & training
 - **NumPy / Pandas** for data handling
 - **Matplotlib / Seaborn** for visualization
-- **OpenCV / PIL** for image manipulation
 
----
-
-## 🛠️ How to Run
-
-1. Clone the repo:
-   ```bash
-   git clone https://github.com/your-username/Dog-Breed-Identification-Using-DeepLearning.git
-   cd Dog-Breed-Identification-Using-DeepLearning
