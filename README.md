@@ -8,7 +8,7 @@ This project classifies over **120 dog breeds** from a dataset of **10,000+ imag
 
 - 10,000+ high-quality dog images
 - 120 distinct dog breeds
-- Images are labeled and split into train/validation sets
+- Images are labelled and split into train/validation sets
 
 ---
 
@@ -16,7 +16,7 @@ This project classifies over **120 dog breeds** from a dataset of **10,000+ imag
 
 - **Transfer Learning:** Leveraged pre-trained CNN architectures (Mobilenetv4)
 - **Fine-tuning:** Trained top layers on dog images while freezing base model weights (initially)
-- **Image Preprocessing:** Resizing, normalization, and optional data augmentation
+- **Image Preprocessing:** Resizing, normalisation, and optional data augmentation
 - **Model Evaluation:** Accuracy, confusion matrix, and visual sample predictions
 
 ---
