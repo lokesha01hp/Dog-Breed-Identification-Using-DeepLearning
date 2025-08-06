@@ -1,5 +1,7 @@
 import streamlit as st
 import tensorflow as tf
+from tensorflow import keras
+import tensorflow_hub as hub
 import numpy as np
 from PIL import Image
 
@@ -10,12 +12,12 @@ st.write("Upload an image of a dog and I'll tell you what breed it is!")
 
 # Load model and labels (you MUST have these already loaded or load them here)
 @st.cache_resource
-def load_model():
-    import tensorflow_hub as hub
-    import tf_keras as keras
-    model_path = "I:/Dog-Breed-Identification-Using-DeepLearning/data/20250803-060103-full-images-dataset-10000-images-mobilenet.h5"
-    model = keras.models.load_model(model_path, custom_objects={"KerasLayer": hub.KerasLayer})
+def load_model(model_path):
+    print(f"loading model from: {model_path}")
+    model = keras.models.load_model(model_path,
+                                    custom_objects={"KerasLayer": hub.KerasLayer})
     return model
+
 
 @st.cache_data
 def load_labels():
