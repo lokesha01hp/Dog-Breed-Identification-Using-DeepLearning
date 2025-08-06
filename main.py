@@ -18,7 +18,7 @@ st.markdown("""
             font-weight: 700;
             text-align: center;
             color: #1e272e;
-            margin-bottom: 10px;
+            margin-bottom: 5px;
         }
         .desc {
             text-align: center;
@@ -26,28 +26,30 @@ st.markdown("""
             font-size: 16px;
             margin-bottom: 30px;
         }
-        .result-box {
-            background-color: #fdf0f3;
-            border-radius: 15px;
+        .label-container {
+            background-color: #ffecec;
+            border-left: 6px solid #e74c3c;
             padding: 20px;
+            margin: 20px auto 20px auto;
+            width: 50%;
             text-align: center;
-            margin-top: 30px;
-            margin-bottom: 40px;
-            box-shadow: 0px 5px 12px rgba(0, 0, 0, 0.07);
+            border-radius: 12px;
+            box-shadow: 0 0 6px rgba(0,0,0,0.05);
         }
         .breed-name {
-            color: #d63031;
-            font-size: 26px;
-            font-weight: 600;
-            margin-bottom: 20px;
+            color: #e74c3c;
+            font-size: 24px;
+            font-weight: bold;
+            margin: 0;
         }
         .center-img {
             display: block;
             margin-left: auto;
             margin-right: auto;
             border-radius: 12px;
-            width: 50%;
-            box-shadow: 0 0 8px rgba(0, 0, 0, 0.08);
+            width: 35%;
+            margin-top: 25px;
+            box-shadow: 0 0 8px rgba(0, 0, 0, 0);
         }
     </style>
 """, unsafe_allow_html=True)
@@ -88,14 +90,19 @@ if uploaded_file:
         predicted_index = np.argmax(predictions[0])
         predicted_breed = unique_breeds[predicted_index]
 
+        # Convert image to base64
         buffered = BytesIO()
         image.save(buffered, format="JPEG")
         img_str = base64.b64encode(buffered.getvalue()).decode("utf-8")
 
-# Now render everything with corrected HTML
-st.markdown(f"""
-    <div class='result-box'>
-        <div class='breed-name'>🐾 {predicted_breed}</div>
-        <img src="data:image/jpeg;base64,{img_str}" class="center-img" />
-    </div>
-""", unsafe_allow_html=True)
+        # Render prediction label container
+        st.markdown(f"""
+            <div class='label-container'>
+                <p class='breed-name'>🐾 {predicted_breed}</p>
+            </div>
+        """, unsafe_allow_html=True)
+
+        # Render image separately below
+        st.markdown(f"""
+            <img src="data:image/jpeg;base64,{img_str}" class="center-img" />
+        """, unsafe_allow_html=True)
