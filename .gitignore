@@ -1,0 +1,6 @@
+# Ignore Python virtual environments
+env/
+venv/
+.venv/
+ENV/
+dogbreed-env/
