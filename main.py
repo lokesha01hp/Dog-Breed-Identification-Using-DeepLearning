@@ -55,7 +55,7 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 # Title
-st.markdown("<div class='title'>🐶 Dog Breed Identifier</div>", unsafe_allow_html=True)
+st.markdown("<div class='title'>🐶 Dog Breed Identifier🐶 </div>", unsafe_allow_html=True)
 st.markdown("<div class='desc'>Upload a dog pic and I’ll guess the breed — smarter than your ex tbh.</div>", unsafe_allow_html=True)
 
 # Load model + labels
@@ -76,11 +76,11 @@ model = load_model("I:/Dog-Breed-Identification-Using-DeepLearning/data/20250803
 unique_breeds = load_labels()
 
 # Upload section
-uploaded_file = st.file_uploader("📤 Upload a dog image", type=["jpg", "jpeg", "png"])
+uploaded_file = st.file_uploader("Upload a dog image", type=["jpg", "jpeg", "png"])
 
 # Prediction section
 if uploaded_file:
-    with st.spinner("🔍 Finding the fluff identity..."):
+    with st.spinner("Finding the fluff identity..."):
         image = Image.open(uploaded_file).convert("RGB")
         image_resized = image.resize((224, 224))
         image_array = np.array(image_resized) / 255.0
