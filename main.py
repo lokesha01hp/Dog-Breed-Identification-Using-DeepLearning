@@ -98,7 +98,7 @@ if uploaded_file:
         # Render prediction label container
         st.markdown(f"""
             <div class='label-container'>
-                <p class='breed-name'>{predicted_breed}🐶 </p>
+                <p class='breed-name'>🐶{predicted_breed}🐶 </p>
             </div>
         """, unsafe_allow_html=True)
 
