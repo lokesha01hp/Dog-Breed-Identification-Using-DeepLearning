@@ -56,7 +56,7 @@ st.markdown("""
 
 # Title
 st.markdown("<div class='title'>🐶 Dog Breed Identifier🐶 </div>", unsafe_allow_html=True)
-st.markdown("<div class='desc'>Upload a dog pic and I’ll guess the breed — smarter than your ex tbh.</div>", unsafe_allow_html=True)
+st.markdown("<div class='desc'>Upload a dog pic</div>", unsafe_allow_html=True)
 
 # Load model + labels
 @st.cache_resource
