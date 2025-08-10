@@ -72,7 +72,7 @@ def load_labels():
     unique_breeds = np.unique(labels_csv['breed'].to_numpy())
     return unique_breeds
 
-model = load_model("I:/Dog-Breed-Identification-Using-DeepLearning/data/20250803-060103-full-images-dataset-10000-images-mobilenet.h5")
+model = load_model("I:/Dog-Breed-Identification-Using-DeepLearning/data/model_on_10000Images.h5")
 unique_breeds = load_labels()
 
 # Upload section
