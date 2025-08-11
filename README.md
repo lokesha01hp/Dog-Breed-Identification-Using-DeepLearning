@@ -24,7 +24,7 @@ This project classifies over **120 dog breeds** from a dataset of **10,000+ imag
 ## Tech Stack
 
 - **Python** 
-- **TensorFlow and Keras** for model building & training
-- **NumPy / Pandas** for data handling
-- **Matplotlib / Seaborn** for visualization
+- **TensorFlow and Keras** 
+- **NumPy / Pandas** 
+- **Matplotlib / Seaborn**
 
