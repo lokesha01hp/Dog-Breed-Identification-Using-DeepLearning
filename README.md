@@ -14,7 +14,7 @@ This project classifies over **120 dog breeds** from a dataset of more than 10,0
 
 ## Approach
 
-- **Transfer Learning:** Leveraged pre-trained CNN architectures (Mobilenetv4)
+- **Transfer Learning:** Leveraged pre-trained CNN architectures (Mobilenet.v4)
 - **Fine-tuning:** Trained top layers on dog images while freezing base model weights 
 - **Image Preprocessing:** Resizing, normalisation, and optional data augmentation
 - **Model Evaluation:** Accuracy, confusion matrix, and visual sample predictions
