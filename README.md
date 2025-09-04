@@ -8,7 +8,7 @@ This project classifies over **120 dog breeds** from a dataset of more than **10
 
 - 10,000+ high-quality dog images
 - 120 distinct dog breeds
-- Images are labelled and split into train/validation sets
+- Images are labelled and split into train sets.
 
 ---
 
