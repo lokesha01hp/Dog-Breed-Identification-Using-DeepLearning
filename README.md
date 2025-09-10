@@ -1,6 +1,6 @@
 # Dog Breed Identification Using Deep Learning
 
-This project classifies over 120 dog breeds from a dataset of more than **10,000 images** using deep learning techniques. It harnesses the power of transfer learning to build an efficient and accurate image classification model with limited computational resources.
+This project classifies over **120 dog breeds** from a dataset of more than **10,000 images** using deep learning techniques. It harnesses the power of transfer learning to build an efficient and accurate image classification model with limited computational resources.
 
 ---
 
