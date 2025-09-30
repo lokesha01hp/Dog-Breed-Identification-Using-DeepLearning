@@ -26,5 +26,5 @@ This project classifies over 120 dog breeds from a dataset of more than **10,000
 - **Python** 
 - **TensorFlow and Keras** 
 - **NumPy / Pandas** 
-- **Matplotlib / Seaborn**
+- ****Matplotlib / Seaborn****
 
